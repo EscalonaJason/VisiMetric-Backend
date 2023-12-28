@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EfqX062YzgrBmg+IXqSxUFlY1JGZfQ8/y+WSMr3kVwieKYplZq8zNKXrYo6D2l/roJLOt2EMOb2E6J1+3P1R6Q==",
+  "dgSpecHash": "eT4wPe2TgAF2hN3ns71dSpe3El3LBtH+dSjQ5JS/3QynOfZHCl8wz/2Vdf8ybPO5AmiBUcR211zqLzUXPnIzNg==",
   "success": true,
-  "projectFilePath": "D:\\Diplomarbeit\\Product\\Backend\\WebSockets\\WebSockets.csproj",
+  "projectFilePath": "D:\\Diplomarbeit\\Product\\VisiMetric-Backend\\Backend\\WebSockets\\WebSockets.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

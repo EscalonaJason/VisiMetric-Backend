@@ -1,4 +1,4 @@
-﻿namespace Model;
+﻿namespace API;
 
 public class Class1
 {

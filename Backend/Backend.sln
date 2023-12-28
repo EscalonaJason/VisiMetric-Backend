@@ -6,7 +6,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controller", "Controller\Controller.csproj", "{60B609A0-4CAE-4632-9677-5E10D9C7A985}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSockets", "WebSockets\WebSockets.csproj", "{BB075972-8CB6-4DA0-8C0C-A8BE82D12989}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "API\API.csproj", "{0C07A76E-BE94-4648-8EFA-B3D35494E65D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,9 +26,9 @@ Global
 		{60B609A0-4CAE-4632-9677-5E10D9C7A985}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60B609A0-4CAE-4632-9677-5E10D9C7A985}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60B609A0-4CAE-4632-9677-5E10D9C7A985}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BB075972-8CB6-4DA0-8C0C-A8BE82D12989}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BB075972-8CB6-4DA0-8C0C-A8BE82D12989}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BB075972-8CB6-4DA0-8C0C-A8BE82D12989}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BB075972-8CB6-4DA0-8C0C-A8BE82D12989}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C07A76E-BE94-4648-8EFA-B3D35494E65D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C07A76E-BE94-4648-8EFA-B3D35494E65D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C07A76E-BE94-4648-8EFA-B3D35494E65D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C07A76E-BE94-4648-8EFA-B3D35494E65D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

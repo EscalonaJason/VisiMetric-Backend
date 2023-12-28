@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Diplomarbeit\\Product\\Backend\\WebSockets\\WebSockets.csproj": {}
+    "D:\\Diplomarbeit\\Product\\VisiMetric-Backend\\Backend\\WebSockets\\WebSockets.csproj": {}
   },
   "projects": {
-    "D:\\Diplomarbeit\\Product\\Backend\\WebSockets\\WebSockets.csproj": {
+    "D:\\Diplomarbeit\\Product\\VisiMetric-Backend\\Backend\\WebSockets\\WebSockets.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Diplomarbeit\\Product\\Backend\\WebSockets\\WebSockets.csproj",
+        "projectUniqueName": "D:\\Diplomarbeit\\Product\\VisiMetric-Backend\\Backend\\WebSockets\\WebSockets.csproj",
         "projectName": "WebSockets",
-        "projectPath": "D:\\Diplomarbeit\\Product\\Backend\\WebSockets\\WebSockets.csproj",
+        "projectPath": "D:\\Diplomarbeit\\Product\\VisiMetric-Backend\\Backend\\WebSockets\\WebSockets.csproj",
         "packagesPath": "C:\\Users\\Jason\\.nuget\\packages\\",
-        "outputPath": "D:\\Diplomarbeit\\Product\\Backend\\WebSockets\\obj\\",
+        "outputPath": "D:\\Diplomarbeit\\Product\\VisiMetric-Backend\\Backend\\WebSockets\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

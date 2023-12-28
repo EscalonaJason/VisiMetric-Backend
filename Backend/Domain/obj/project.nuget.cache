@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rEh9g6c3xIZ1FANyeMsmWsa6rXZwGcvVQ/3vi5QOb3H5lcq1puTboSuckhqFuHt6rEToBXZvHJ7O0XmzmThpCQ==",
+  "dgSpecHash": "Ja31LQfpfrHBiMY7qIHBzkDTSTcTdT4PTAx3rkY/zaApS5yrrFlVoi61WMiG+cs6PhPs2lvD+9zuXDokusxY6w==",
   "success": true,
-  "projectFilePath": "D:\\Diplomarbeit\\Product\\Backend\\Domain\\Domain.csproj",
+  "projectFilePath": "D:\\Diplomarbeit\\Product\\VisiMetric-Backend\\Backend\\Domain\\Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
