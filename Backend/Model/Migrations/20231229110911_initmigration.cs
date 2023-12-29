@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Model.Migrations
 {
     /// <inheritdoc />
-    public partial class Init : Migration
+    public partial class initmigration : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -36,7 +36,7 @@ namespace Model.Migrations
                 schema: "visimetric",
                 columns: table => new
                 {
-                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Id = table.Column<string>(type: "varchar(90)", nullable: false),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     UserId = table.Column<int>(type: "int", nullable: false)
                 },
@@ -52,6 +52,38 @@ namespace Model.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "MEASUREMENTS",
+                schema: "visimetric",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    WoundId = table.Column<string>(type: "varchar(90)", nullable: false),
+                    Length = table.Column<float>(type: "real", nullable: false),
+                    Width = table.Column<float>(type: "real", nullable: false),
+                    Area = table.Column<float>(type: "real", nullable: false),
+                    Date = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Picture = table.Column<byte[]>(type: "varbinary(max)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_MEASUREMENTS", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_MEASUREMENTS_WOUNDS_WoundId",
+                        column: x => x.WoundId,
+                        principalSchema: "visimetric",
+                        principalTable: "WOUNDS",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_MEASUREMENTS_WoundId",
+                schema: "visimetric",
+                table: "MEASUREMENTS",
+                column: "WoundId");
+
             migrationBuilder.CreateIndex(
                 name: "IX_WOUNDS_UserId",
                 schema: "visimetric",
@@ -62,6 +94,10 @@ namespace Model.Migrations
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropTable(
+                name: "MEASUREMENTS",
+                schema: "visimetric");
+
             migrationBuilder.DropTable(
                 name: "WOUNDS",
                 schema: "visimetric");

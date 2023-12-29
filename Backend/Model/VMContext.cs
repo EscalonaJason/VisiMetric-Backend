@@ -6,11 +6,12 @@ public class VMContext : DbContext
 {
     public DbSet<User> Users { get; set; }
     public DbSet<Wound> Wounds { get; set; }
+    public DbSet<Measurement> Measurements { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         // Set your database connection string here
-        optionsBuilder.UseSqlServer("Server=localhost,35306;Database=vmdb;User Id=backend;Password=!Krems123;Encrypt=true;TrustServerCertificate=true;");
+        optionsBuilder.UseSqlServer("Server=localhost,35306;Database=visimetricdb;User Id=backend;Password=!Krems123;Encrypt=true;TrustServerCertificate=true;");
     }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -31,6 +32,12 @@ public class VMContext : DbContext
             .WithMany(u => u.Wounds)
             .HasForeignKey(w => w.UserId)
             .OnDelete(DeleteBehavior.Cascade); // The Wounds will be deleted, if the User they belong to is deleted
+        
+        modelBuilder.Entity<Measurement>()
+            .HasOne(m => m.Wound)
+            .WithMany(w => w.Measurements)
+            .HasForeignKey(m => m.WoundId)
+            .OnDelete(DeleteBehavior.Cascade);
     }
 
 }

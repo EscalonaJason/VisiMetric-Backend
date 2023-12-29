@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Model.Migrations
 {
     [DbContext(typeof(VMContext))]
-    [Migration("20231228164115_Init")]
-    partial class Init
+    [Migration("20231229110911_initmigration")]
+    partial class initmigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -23,6 +23,40 @@ namespace Model.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
+
+            modelBuilder.Entity("Measurement", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<float>("Area")
+                        .HasColumnType("real");
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime2");
+
+                    b.Property<float>("Length")
+                        .HasColumnType("real");
+
+                    b.Property<byte[]>("Picture")
+                        .HasColumnType("varbinary(max)");
+
+                    b.Property<float>("Width")
+                        .HasColumnType("real");
+
+                    b.Property<string>("WoundId")
+                        .IsRequired()
+                        .HasColumnType("varchar(90)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("WoundId");
+
+                    b.ToTable("MEASUREMENTS", "visimetric");
+                });
 
             modelBuilder.Entity("Model.User", b =>
                 {
@@ -60,9 +94,8 @@ namespace Model.Migrations
 
             modelBuilder.Entity("Model.Wound", b =>
                 {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<string>("Id")
+                        .HasColumnType("varchar(90)");
 
                     b.Property<string>("Description")
                         .IsRequired()
@@ -76,6 +109,17 @@ namespace Model.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("WOUNDS", "visimetric");
+                });
+
+            modelBuilder.Entity("Measurement", b =>
+                {
+                    b.HasOne("Model.Wound", "Wound")
+                        .WithMany("Measurements")
+                        .HasForeignKey("WoundId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Wound");
                 });
 
             modelBuilder.Entity("Model.Wound", b =>
@@ -92,6 +136,11 @@ namespace Model.Migrations
             modelBuilder.Entity("Model.User", b =>
                 {
                     b.Navigation("Wounds");
+                });
+
+            modelBuilder.Entity("Model.Wound", b =>
+                {
+                    b.Navigation("Measurements");
                 });
 #pragma warning restore 612, 618
         }
