@@ -1,0 +1,16 @@
+D:\Diplomarbeit\Product\VisiMetric-Backend\Backend\Domain\bin\Debug\net8.0\Domain.deps.json
+D:\Diplomarbeit\Product\VisiMetric-Backend\Backend\Domain\bin\Debug\net8.0\Domain.dll
+D:\Diplomarbeit\Product\VisiMetric-Backend\Backend\Domain\bin\Debug\net8.0\Domain.pdb
+D:\Diplomarbeit\Product\VisiMetric-Backend\Backend\Domain\bin\Debug\net8.0\Model.dll
+D:\Diplomarbeit\Product\VisiMetric-Backend\Backend\Domain\bin\Debug\net8.0\Model.pdb
+D:\Diplomarbeit\Product\VisiMetric-Backend\Backend\Domain\obj\Debug\net8.0\Domain.csproj.AssemblyReference.cache
+D:\Diplomarbeit\Product\VisiMetric-Backend\Backend\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Diplomarbeit\Product\VisiMetric-Backend\Backend\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+D:\Diplomarbeit\Product\VisiMetric-Backend\Backend\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+D:\Diplomarbeit\Product\VisiMetric-Backend\Backend\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+D:\Diplomarbeit\Product\VisiMetric-Backend\Backend\Domain\obj\Debug\net8.0\Domain.sourcelink.json
+D:\Diplomarbeit\Product\VisiMetric-Backend\Backend\Domain\obj\Debug\net8.0\Domain.csproj.CopyComplete
+D:\Diplomarbeit\Product\VisiMetric-Backend\Backend\Domain\obj\Debug\net8.0\Domain.dll
+D:\Diplomarbeit\Product\VisiMetric-Backend\Backend\Domain\obj\Debug\net8.0\refint\Domain.dll
+D:\Diplomarbeit\Product\VisiMetric-Backend\Backend\Domain\obj\Debug\net8.0\Domain.pdb
+D:\Diplomarbeit\Product\VisiMetric-Backend\Backend\Domain\obj\Debug\net8.0\ref\Domain.dll

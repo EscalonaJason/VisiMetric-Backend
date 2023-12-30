@@ -1,0 +1,12 @@
+D:\Diplomarbeit\Product\VisiMetric-Backend\Backend\Controller\bin\Debug\net8.0\Controller.deps.json
+D:\Diplomarbeit\Product\VisiMetric-Backend\Backend\Controller\bin\Debug\net8.0\Controller.dll
+D:\Diplomarbeit\Product\VisiMetric-Backend\Backend\Controller\bin\Debug\net8.0\Controller.pdb
+D:\Diplomarbeit\Product\VisiMetric-Backend\Backend\Controller\obj\Debug\net8.0\Controller.GeneratedMSBuildEditorConfig.editorconfig
+D:\Diplomarbeit\Product\VisiMetric-Backend\Backend\Controller\obj\Debug\net8.0\Controller.AssemblyInfoInputs.cache
+D:\Diplomarbeit\Product\VisiMetric-Backend\Backend\Controller\obj\Debug\net8.0\Controller.AssemblyInfo.cs
+D:\Diplomarbeit\Product\VisiMetric-Backend\Backend\Controller\obj\Debug\net8.0\Controller.csproj.CoreCompileInputs.cache
+D:\Diplomarbeit\Product\VisiMetric-Backend\Backend\Controller\obj\Debug\net8.0\Controller.sourcelink.json
+D:\Diplomarbeit\Product\VisiMetric-Backend\Backend\Controller\obj\Debug\net8.0\Controller.dll
+D:\Diplomarbeit\Product\VisiMetric-Backend\Backend\Controller\obj\Debug\net8.0\refint\Controller.dll
+D:\Diplomarbeit\Product\VisiMetric-Backend\Backend\Controller\obj\Debug\net8.0\Controller.pdb
+D:\Diplomarbeit\Product\VisiMetric-Backend\Backend\Controller\obj\Debug\net8.0\ref\Controller.dll
