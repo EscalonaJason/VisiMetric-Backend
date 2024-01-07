@@ -24,6 +24,11 @@ public class UserRepository : IRepository<User, int>
         return user != null ? user.Id : -1; // Assuming -1 as a default or error value
     }
 
+    public List<User> GetAll()
+    {
+        return _context.Users.ToList();
+    }
+
     
     public void Add(User user)
     {

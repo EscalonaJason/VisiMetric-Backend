@@ -36,6 +36,12 @@ public class MeasurementRepository : IRepository<Measurement, int>
         }
     }
 
+    public void DeleteByWound(string woundId)
+    {
+        var measurements = _context.Measurements.Where(m => m.WoundId == woundId);
+        _context.Measurements.RemoveRange(measurements);
+    }
+
     public List<Measurement> GetByWoundId(string woundId)
     {
         return _context.Measurements.Where(m => m.WoundId == woundId).ToList();

@@ -33,7 +33,14 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\Diplomarbeit\\Product\\VisiMetric-Backend\\Backend\\Domain\\Domain.csproj": {
+                "projectPath": "D:\\Diplomarbeit\\Product\\VisiMetric-Backend\\Backend\\Domain\\Domain.csproj"
+              },
+              "D:\\Diplomarbeit\\Product\\VisiMetric-Backend\\Backend\\Model\\Model.csproj": {
+                "projectPath": "D:\\Diplomarbeit\\Product\\VisiMetric-Backend\\Backend\\Model\\Model.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -45,6 +52,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
